@@ -1,0 +1,27 @@
+{
+  "name": "rrr-seu-estilo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campanha vertical RRR — Seu estilo não fica parado.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --port=3000 --no-open",
+    "render": "remotion render src/index.ts RRR deliverables/RRR-seu-estilo.mp4 --codec=h264 --crf=17 --pixel-format=yuv420p --color-space=bt709 --image-format=png --concurrency=3",
+    "cover": "ffmpeg -hide_banner -loglevel error -y -ss 17.9 -i deliverables/RRR-seu-estilo.mp4 -frames:v 1 -update 1 deliverables/RRR-capa.png",
+    "typecheck": "tsc --noEmit",
+    "audio": "python scripts/create_audio.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "@remotion/motion-blur": "4.0.536",
+    "@fontsource/barlow-condensed": "5.2.8",
+    "@fontsource/manrope": "5.2.8",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

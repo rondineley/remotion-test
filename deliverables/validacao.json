@@ -1,0 +1,21 @@
+{
+  "file": "RRR-seu-estilo.mp4",
+  "status": "passed",
+  "resolution": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "duration_seconds": 20.011,
+  "decoded_video_frames": 600,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "audio_codec": "aac",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "decode_errors": 0,
+  "black_frames": [],
+  "end_card_hold_seconds": 2.2,
+  "max_mean_pixel_change_during_hold": 0.00024,
+  "visual_review": "Inspect separately: framing, readable type, editorial rhythm, cuts and transitions."
+}

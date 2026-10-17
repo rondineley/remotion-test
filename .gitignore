@@ -1,0 +1,8 @@
+node_modules/
+build/
+.cache/
+*.log
+deliverables/*.mp4
+deliverables/*.zip
+deliverables/*.png
+deliverables/*.jpg
